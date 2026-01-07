@@ -63,6 +63,7 @@ class BLETextReceiver:
 
         elif event == self._IRQ_GATTS_WRITE:
             conn, value_handle = data
+            print(conn, value_handle)
             if value_handle == self.rx_handle:
                 raw = self.ble.gatts_read(self.rx_handle)
                 try:
@@ -78,3 +79,4 @@ class BLETextReceiver:
                         self.ble.gatts_notify(self.conn_handle, self.tx_handle, b"SAVED")
                     except:
                         pass
+

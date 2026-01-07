@@ -2,6 +2,7 @@ import is31
 from machine import SoftI2C, Pin, ADC
 import time, random, framebuf ,math
 from ble_text import BLETextReceiver
+import machine
 
 class GameContext:
     WIDTH = 9
@@ -33,7 +34,7 @@ class GameContext:
     def __init__(self):
         # 显示
         i2c = SoftI2C(scl=Pin(1), sda=Pin(0))
-        self.display = is31.Matrix(i2c, rotate_180=True)
+        self.display = is31.Matrix(i2c, rotate_180=False)
         self.display.fill(0)
 
         # 按键
@@ -717,6 +718,7 @@ class GameContext:
             time.sleep(0.05)
             if self.debounce_key():     
                 break
+        machine.reset()
 
     def run(self):
         #self.app_charge()
