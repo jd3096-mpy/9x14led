@@ -4,6 +4,14 @@
 
 ![Anise Badge](./pic.jpg)
 
+## 视频演示
+
+[开源量产的赛博蜡烛项链 电子蜡烛的新形态_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1VBUsB5Ec8spm_id_from=333.788.player.player_end_recommend_autoplay&vd_source=16fd6d2ed1bceb65dca80ff0e6e9e8ec&trackid=web_related_0.router-related-2206419-45xsh.1768442065146.930)
+
+## 开源广场
+
+[赛博蜡烛项链 - 立创开源硬件平台](https://oshwhub.com/jd3096/cyber-candle)
+
 ## 程序
 
 * 火焰动画显示
